@@ -2,7 +2,7 @@
 lock "~> 3.11.2"
 
 set :application, "musicdb"
-set :repo_url, "git@github.com:smithwebtek/musicdb.git"
+set :repo_url, "git@github.com:smithwebtek/music-db-api-v2.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -49,4 +49,4 @@ set :rails_assets_groups, :assets
 set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-set :ssh_options, verify_host_key: :secure
+# set :ssh_options, verify_host_key: :secure
