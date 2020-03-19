@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
-  resources :song_collections
-  resources :collections
-  resources :resources
-  resources :song_categories
-  resources :categories
-  resources :songs
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+ 
+	root 'api/songs#index'
+	get 'api/songs/:id/resources', to: 'api/songs#resources'
+	get 'api/songs/:id/collections', to: 'api/songs#collections'
+
+	get 'api/books', to: 'api/resources#books'
+
+	namespace :api do 
+	  resources :categories
+		resources :songs
+		resources :song_collections
+		resources :collections
+		resources :resources
+	end
 end
