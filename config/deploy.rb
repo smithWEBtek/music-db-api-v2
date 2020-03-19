@@ -10,10 +10,10 @@ set :repo_url, "git@github.com:smithwebtek/musicdb.git"
 set :rails_env, 'production'
 set :user, 'deploy'
 set :pty, true
-set :ssh_options, {:forward_agent => true}
+# set :ssh_options, {:forward_agent => true}
 set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
-set :rvm_roles, [ :app, :web ]
-set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_temp' }
+# set :rvm_roles, [ :app, :web ]
+# set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_temp' }
 set :rvm_ruby_version, '2.6.3'
 
 # Default value for :format is :airbrussh.
