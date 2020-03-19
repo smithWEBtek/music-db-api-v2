@@ -7,11 +7,12 @@ set :repo_url, "git@github.com:smithwebtek/music-db-api-v2.git"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-set :rails_env, 'production'
+# set :rails_env, 'production'
 set :user, 'deploy'
-set :pty, true
+# set :pty, true
 # set :ssh_options, {:forward_agent => true}
-set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
+# set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
+set :deploy_to, "/home/deploy/musicdb"
 # set :rvm_roles, [ :app, :web ]
 # set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_temp' }
 set :rvm_ruby_version, '2.6.3'
@@ -50,4 +51,4 @@ set :rails_assets_groups, :assets
 set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure
+set :ssh_options, verify_host_key: :secure
