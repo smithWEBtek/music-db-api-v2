@@ -40,7 +40,7 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/syst
 set :assets_manifests, ['app/assets/config/manifest.js']
 
 # RAILS_GROUPS env value for the assets:precompile task. Default to nil.
-set :rails_assets_groups, :assets
+# set :rails_assets_groups, :assets
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
