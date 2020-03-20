@@ -6,13 +6,14 @@ set :repo_url, "git@github.com:smithwebtek/music-db-api-v2.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+set :branch, 'deploy-to-bwel5'
 
 # set :rails_env, 'production'
 set :user, 'deploy'
 # set :pty, true
 # set :ssh_options, {:forward_agent => true}
 # set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
-set :deploy_to, "/home/deploy/musicdb"
+set :deploy_to, "/home/deploy/websites/musicdb"
 # set :rvm_roles, [ :app, :web ]
 # set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_temp' }
 set :rvm_ruby_version, '2.6.5'
