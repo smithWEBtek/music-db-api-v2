@@ -8,11 +8,9 @@ set :repo_url, "git@github.com:smithwebtek/music-db-api-v2.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :branch, 'deploy-to-bwel5'
 
-# set :rails_env, 'production'
+set :rails_env, 'production'
 set :user, 'deploy'
-# set :pty, true
 set :ssh_options, {:forward_agent => true}
-# set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
 set :deploy_to, "/home/deploy/websites/musicdb"
 # set :rvm_roles, [ :app, :web ]
 # set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_temp' }
@@ -26,7 +24,7 @@ set :rvm_ruby_version, '2.6.5'
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
 # Default value for :pty is false
-set :pty, true
+# set :pty, true
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "config/secrets.yml", "config/master.key"
