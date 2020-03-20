@@ -54,14 +54,28 @@ set :keep_releases, 5
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
-before "deploy:assets:precompile", "deploy:yarn_install"
+# before "deploy:assets:precompile", "deploy:yarn_install"
+
+# namespace :deploy do
+#   desc 'Run rake yarn:install'
+#   task :yarn_install do
+#     on roles(:web) do
+#       within release_path do
+#         execute("cd #{release_path} && yarn install")
+#       end
+#     end
+#   end
+# end
+
+
+before "deploy:assets:precompile", "deploy:npm_install"
 
 namespace :deploy do
-  desc 'Run rake yarn:install'
-  task :yarn_install do
+  desc 'Run rake npm:install'
+  task :npm_install do
     on roles(:web) do
       within release_path do
-        execute("cd #{release_path} && yarn install")
+        execute("cd #{release_path} && npm install")
       end
     end
   end
