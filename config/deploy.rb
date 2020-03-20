@@ -15,7 +15,7 @@ set :user, 'deploy'
 set :deploy_to, "/home/deploy/musicdb"
 # set :rvm_roles, [ :app, :web ]
 # set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_temp' }
-set :rvm_ruby_version, '2.6.3'
+set :rvm_ruby_version, '2.6.5'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
