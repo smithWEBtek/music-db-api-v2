@@ -11,7 +11,7 @@ set :branch, 'deploy-to-bwel5'
 # set :rails_env, 'production'
 set :user, 'deploy'
 # set :pty, true
-# set :ssh_options, {:forward_agent => true}
+set :ssh_options, {:forward_agent => true}
 # set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
 set :deploy_to, "/home/deploy/websites/musicdb"
 # set :rvm_roles, [ :app, :web ]
