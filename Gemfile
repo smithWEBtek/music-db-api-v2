@@ -35,7 +35,9 @@ gem 'capistrano-rvm', '~> 0.1.2'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'ed25519', '~> 1.2'
 gem 'bcrypt_pbkdf', '~> 1'
-gem 'sshkit'
+
+# Use Passenger as the app server
+gem "passenger", ">= 5.3.2", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
   gem 'pry'
