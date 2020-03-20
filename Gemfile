@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
@@ -35,7 +35,7 @@ gem 'capistrano-rvm', '~> 0.1.2'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'ed25519', '~> 1.2'
 gem 'bcrypt_pbkdf', '~> 1'
-
+gem 'sshkit'
 
 group :development, :test do
   gem 'pry'
