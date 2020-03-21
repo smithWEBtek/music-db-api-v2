@@ -3,8 +3,11 @@ class Api::SongsController < ApplicationController
 	
 	def index
 		@songs = Song.all.sort { |a,b| a.title <=> b.title }
-		render json: @songs
+		respond_to do |f|
+			f.html { render 'songs/index' }
+			f.json { render json: @songs }
 		end
+	end
 	
 	def show
 		render json: @song
