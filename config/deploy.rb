@@ -8,7 +8,7 @@ set :repo_url, "git@github.com:smithwebtek/music-db-api-v2.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # set :rails_env, 'production'
-set :user, 'deploy'
+set :user, 'root'
 # set :pty, true
 # set :ssh_options, {:forward_agent => true}
 # set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
