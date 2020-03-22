@@ -62,7 +62,7 @@ namespace :deploy do
     end
   end
 
-  before "deploy:assets:precompile", "deploy:npm_install"
+  # before "deploy:assets:precompile", "deploy:npm_install"
 
   namespace :deploy do
     desc 'Run rake npm:install'
