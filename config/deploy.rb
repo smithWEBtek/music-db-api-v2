@@ -11,7 +11,7 @@ set :rvm_ruby_version, '2.6.5'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/deploy/musicdb'
+set :deploy_to, '/home/deploy/musicdb'
 
 # Default value for :format is :pretty
 set :format, :pretty
