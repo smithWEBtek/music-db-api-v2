@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  # gem 'capistrano', '~> 3.12.1'
   gem 'capistrano', '~> 3.2.1'
   gem 'capistrano-rails', '~> 1.4.0'
   gem 'capistrano-ssh-doctor', '~> 1.0'
@@ -51,13 +52,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  # gem 'capistrano', '~> 3.12.1'
-  # gem 'capistrano-rails', '~> 1.4.0'
-  # gem 'capistrano-bundler', '~> 1.6.0'
-  # gem 'capistrano-rvm', '~> 0.1.2'
-  # gem 'capistrano-passenger', '~> 0.2.0'
-  # gem 'ed25519', '~> 1.2'
-  # gem 'bcrypt_pbkdf', '~> 1'
 end
 
 group :test do
