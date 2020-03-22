@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.2.1'
+lock '3.12.1'
 
 set :application, "musicdb"
 set :repo_url, "git@github.com:smithwebtek/music-db-api-v2.git"
